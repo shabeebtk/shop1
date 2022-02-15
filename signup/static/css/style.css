@@ -1,0 +1,29 @@
+.p1{
+    color: red;
+    font-size: larger;
+    text-align: center;
+}
+.q1{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-align: center;
+}
+.bd{
+    background-image:url('../images/fresh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+div p{
+    color: blue;
+
+}
+img[alt="img1"]{
+    height: 400px;
+
+}
+.div1{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    /* background-image: url('../images/login.jpg'); */
+}

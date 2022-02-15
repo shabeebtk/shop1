@@ -1,29 +1,44 @@
+{% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
-    <center><h1><u>FRESH MART SUPER MARKET</u></h1>
-    <BR></BR><BR></BR><BR></BR><BR></BR>
- 
-    <h3><u> sign up</h3></u>
-    <form action="">
-        <label for="name">name     </label>
-        <input type="name" placeholder="enter your name " >
-        <br> <br>
-        <label for="phone number">phone number </label>
-        <input type="number" placeholder="enter your number" maxlength="10">
-        <br><br>
-        <label for="password">new password</label>
-        <input type="password" placeholder="enter your password">
-        
 
-    </form>
+<body class="bd">
+    <center>
+        <h1 class="q1"><u>FRESH MART SUPER MARKET</u></h1>
+        <BR></BR><BR></BR><BR></BR><BR></BR>
+        <div class="div1">
+            <h3><u> sign up</h3></u>
 
+            <form action="">
+
+                <label for="name">name </label>
+                <input type="name" placeholder="enter your name ">
+                <br> <br>
+                <label for="phone number">phone number </label>
+                <input type="number" placeholder="enter your number" maxlength="10">
+                <br><br>
+                <label for="password">new password</label>
+                <input type="password" placeholder="enter your password">
+                <br><br>
+                <label for="password">confirm password</label>
+                <input type="password" placeholder="confirm password">
+                <br><br>
+        </div>
+
+        </form>
     </center>
+    <br>
+
+
+
 
 </body>
+
 </html>
