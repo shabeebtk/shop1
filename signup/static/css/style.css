@@ -1,3 +1,5 @@
+
+
 .p1{
     color: red;
     font-size: larger;
@@ -11,7 +13,7 @@
 .bd{
     background-image:url('../images/fresh.jpg');
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover; 
 }
 div p{
     color: blue;
@@ -22,8 +24,25 @@ img[alt="img1"]{
 
 }
 .div1{
-    height: 200px;
-    width: 300px;
+    height: 250px;
+    width: 310px;
     background-color: white;
     /* background-image: url('../images/login.jpg'); */
+}
+.bor{
+    color: blue;
+}
+.hh{
+    color: brown;
+}
+.hh{
+    color: blue;
+}
+.bo{
+    color: black;
+    border-width: 5px;
+    border-style: dashed;
+}
+.ma{
+    margin-top: 50px;
 }
