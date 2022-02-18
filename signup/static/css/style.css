@@ -11,7 +11,7 @@
     text-align: center;
 }
 .bd{
-    background-image:url('../images/fresh.jpg');
+    background-image:url('../images/signup\ page.jpeg');
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -28,6 +28,10 @@ img[alt="img1"]{
     width: 310px;
     background-color: white;
     /* background-image: url('../images/login.jpg'); */
+    border: 4px;
+    border-style: double;
+    padding-bottom: 20px;
+    margin-top: 40px;
 }
 .bor{
     color: blue;
@@ -46,3 +50,4 @@ img[alt="img1"]{
 .ma{
     margin-top: 50px;
 }
+
