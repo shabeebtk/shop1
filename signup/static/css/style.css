@@ -31,7 +31,9 @@ img[alt="img1"]{
     border: 4px;
     border-style: double;
     padding-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 90px;
+    border-radius: 20px;
+   
 }
 .bor{
     color: blue;
@@ -48,6 +50,6 @@ img[alt="img1"]{
     border-style: dashed;
 }
 .ma{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
