@@ -11,7 +11,7 @@
     text-align: center;
 }
 .bd{
-    background-image:url('../images/signup\ page.jpeg');
+    background-image:url('../images/signup\ page1.jpeg');
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -31,8 +31,9 @@ img[alt="img1"]{
     border: 4px;
     border-style: double;
     padding-bottom: 20px;
-    margin-top: 90px;
+    margin-top: 10px;
     border-radius: 20px;
+    margin-bottom: 20px;
    
 }
 .bor{
@@ -56,4 +57,13 @@ img[alt="img1"]{
 img[alt="logo"]{
     height: 40px;
 }
+.heading{
+    font-family:'' , sans-serif;
+    padding-right: 10px;
 
+}
+.bh{
+    font-family: sans-serif;
+    padding-right: 10px;
+    padding-top: ;
+}
