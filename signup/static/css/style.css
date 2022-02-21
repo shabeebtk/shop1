@@ -49,6 +49,7 @@ img[alt="img1"]{
     color: black;
     border-width: 5px;
     border-style: dashed;
+    position: fixed;
 }
 .ma{
     margin-top: 80px;
@@ -67,4 +68,25 @@ img[alt="logo"]{
     padding-right: 10px;
     padding-top: -20px;
     
+}
+.div2{
+    height: 630px;
+    width: 500px;
+    background-color: burlywood;
+    overflow-x:  scroll;
+    opacity: 0.9;
+    background-image:conic-gradient( orange 0deg ,orange 90deg, yellow , yellow ,green, cyan, blue, violet );
+    
+}
+    
+.shab{
+    position: relative; left: 150px;
+}
+
+.tk{
+    position: fixed;
+}
+.pp{
+    position: sticky;
+    top: 0;
 }
