@@ -24,7 +24,7 @@ img[alt="img1"]{
 
 }
 .div1{
-    height: 250px;
+    height: 270px;
     width: 310px;
     background-color: white;
     /* background-image: url('../images/login.jpg'); */
@@ -49,7 +49,7 @@ img[alt="img1"]{
     color: black;
     border-width: 5px;
     border-style: dashed;
-    position: fixed;
+    /* position: fixed; */
 }
 .ma{
     margin-top: 80px;
@@ -83,10 +83,71 @@ img[alt="logo"]{
     position: relative; left: 150px;
 }
 
-.tk{
+/* .tk{
     position: fixed;
 }
 .pp{
     position: sticky;
     top: 0;
+} */
+
+.box{
+    height: 400px;
+    width: 1000px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+
+    
+}
+.box1{
+    height: 100px;
+    width: 110px;
+    background-color: orange;
+    position: relative;
+    left: 80px;
+    margin-bottom: 20px;
+    position: relative;
+    /* top: 20px; */
+
+}
+.box2{
+    height: 100px;
+    width: 110px;
+    background-color: white;
+    position: relative;
+    left: 80px;
+}
+.box3{
+    height: 100px;
+    width: 110px;
+    background-color: green;
+    position: relative;
+    left: 80px;
+    
+
+}
+.hi{
+    color: blue;
+}
+
+
+/* sigin page */
+
+.indiv{
+    background-color: white;
+    height: 200px;
+    width: 310px;
+    padding-top: 10px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: double;
+    margin-top: 10px;
+}
+
+.inbg{
+    background-image: url('../images/signup\ page1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

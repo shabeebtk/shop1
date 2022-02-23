@@ -10,3 +10,5 @@ def index(request):
 def about(request):
     return render(request,'sample.html')
     
+def signin(request):
+    return render(request,'signin.html' )
