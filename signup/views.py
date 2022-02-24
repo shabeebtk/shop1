@@ -12,3 +12,6 @@ def about(request):
     
 def signin(request):
     return render(request,'signin.html' )
+
+def sample2(request):
+    return render(request,'sample2.html')

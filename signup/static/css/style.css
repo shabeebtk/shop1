@@ -151,3 +151,33 @@ img[alt="logo"]{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.grid{
+    position: relative;
+    left: 200px;
+    background-color: rgb(32, 16, 16) ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1000px;
+    height: 500px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.grid:hover{
+    background-color: blue;
+    
+
+    
+
+}
+.gr2{
+    background-color: chartreuse;
+}
+.gr3{
+    background-color: darkred;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/* .gr4{
+    background-color: black;
+} */
