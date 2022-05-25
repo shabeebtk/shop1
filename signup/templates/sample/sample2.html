@@ -1,0 +1,693 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'javascript.js' %}"></script>
+</head>
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="https://reezhdesign.com">All Football</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>        
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <!-- <div class="container jumbo">
+    <!-- Main component for a primary marketing message or call to action 
+    <div class="card bg-light text-dark shadow">
+      <div class="card-body">
+        <h1 class="card-title">Bootstrap 5 Navbar Slide In On Scrolldown</h1>
+        <p class="lead">This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll. This pen has been updated to Bootstrap 5.1.3</p>
+        <p class="fs-3">Enjoy!</p>
+      </div>
+    </div>
+  </div> <!-- /container 
+<div class="container">
+<a href="https://reezhdesign.com" rel="author">ReeZh Design</a>
+</div> -->
+
+
+
+<div class="home-slider owl-carousel js-fullheight">
+  <div class="slider-item js-fullheight" style="background-image:url(images/slider-1.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+        <div class="col-md-12 ftco-animate">
+          <div class="text w-100 text-center">
+            <h2>Best Place to Travel</h2>
+            <h1 class="mb-3">Norway</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-item js-fullheight" style="background-image:url(images/slider-2.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+        <div class="col-md-12 ftco-animate">
+          <div class="text w-100 text-center">
+            <h2>Best Place to Travel</h2>
+            <h1 class="mb-3">Japan</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-item js-fullheight" style="background-image:url(images/slider-2.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+        <div class="col-md-12 ftco-animate">
+          <div class="text w-100 text-center">
+            <h2>Best Place to Travel</h2>
+            <h1 class="mb-3">Singapore</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+  
+
+
+
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="card text-center" style="width: 200px;">
+          <div class="card-body">
+            <img class="card-img-top" style="width: 150px; height: 100px;" src="./static/images/mainproject/fruits/apple.webp" alt="">
+            <h4>apple</h4>
+            <p style="color: black;">fresh and natural</p>
+            <h5>Rs 130/kg</h5>
+            <button class="btn btn-warning btn-sm">add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card text-center" style="width: 200px;">
+          <div class="card-body">
+            <img class="card-img-top" style="width: 150px; height: 100px;" src="./static/images/mainproject/fruits/apple.webp" alt="">
+            <h4>apple</h4>
+            <p style="color: black;">fresh and natural</p>
+            <h5>Rs 130/kg</h5>
+            <button class="btn btn-warning btn-sm">add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card text-center" style="width: 200px;">
+          <div class="card-body">
+            <img class="card-img-top" style="width: 150px; height: 100px;" src="./static/images/mainproject/fruits/apple.webp" alt="">
+            <h4>apple</h4>
+            <p style="color: black;">fresh and natural</p>
+            <h5>Rs 130/kg</h5>
+            <button class="btn btn-warning btn-sm">add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card text-center" style="width: 200px;">
+          <div class="card-body">
+            <img class="card-img-top" style="width: 150px; height: 100px;" src="./static/images/mainproject/fruits/apple.webp" alt="">
+            <h4>apple</h4>
+            <p style="color: black;">fresh and natural</p>
+            <h5>Rs 130/kg</h5>
+            <button class="btn btn-warning btn-sm">add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card text-center" style="width: 200px;">
+          <div class="card-body">
+            <img class="card-img-top" style="width: 150px; height: 100px;" src="./static/images/mainproject/fruits/apple.webp" alt="">
+            <h4>apple</h4>
+            <p style="color: black;">fresh and natural</p>
+            <h5>Rs 130/kg</h5>
+            <button class="btn btn-warning btn-sm">add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card text-center" style="width: 200px;">
+          <div class="card-body">
+            <img class="card-img-top" style="width: 150px; height: 100px;" src="./static/images/mainproject/fruits/apple.webp" alt="">
+            <h4>apple</h4>
+            <p style="color: black;">fresh and natural</p>
+            <h5>Rs 130/kg</h5>
+            <button class="btn btn-warning btn-sm">add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+       <!-- <div class="mainbox">
+        <div class="a1">a</div>
+        <div class="a2">b</div>
+        <div class="a3">c</div>
+        <div class="a4">d</div>
+        <div class="a5">e</div>
+        <div class="a6">f</div>
+
+
+        <br>
+        <h1 class="hh">hiii</h1>
+    <h2 class="bo">border</h2>
+    <h1 class="ma">margin</h1>
+    <h1 class="pp">heloo</h1>
+    <br>
+    <img src="{%static 'images/logo.jpeg' %}" alt=""> <br><br><br>
+    <div class="div2">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ut expedita rem aspernatur laboriosam dignissimos. Placeat, commodi veritatis ipsam nihil neque consectetur explicabo! Et tenetur tempora quo recusandae itaque eligendi.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dicta et sunt voluptatibus adipisci saepe, placeat non? Molestias aut, alias doloribus magni excepturi soluta ea provident laboriosam id sint omnis?
+    <h1 align="center" size="20">shabeeb</h1>
+    </div>
+   <h2 class="shab">
+       shabeeb
+   </h2>
+   <br>
+   <h2 class="tk">tkkkk</h2>
+   <br><br><br>
+   <div class="box">
+       
+         <div class="box1"> </div>
+         <div class="box2"></div>
+         <div class="box3"></div>
+         -->
+
+
+
+      <!-- </div>
+   <br><br><br>
+   <div class="grid">
+       <div class="gr1">A</div>
+       <div class="gr2">B</div>
+       <div class="gr3">C</div>
+        <div class="gr4">D</div> 
+   </div>  
+
+    <button>
+    <button type="button" class="btn btn-warning">Warning</button>
+   </button>
+   <br>
+   <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>shabeeb</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+ <h1 class="hmsignup"><a href=""></a> signup</h1> 
+<br>
+<h1 class="hmsignin">signin</h1>
+<div class="samplediv"></div>
+
+      </div>   -->
+
+
+
+      <!-- <div class="container bg-warning border-dark border border-5 rounded">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-danger">Submit</button>
+
+      </form></div>
+      <br>
+      
+
+      <div class="d1 mb-2">1</div>
+      <div class="d2 mb-2">2</div>
+      <div class="d3 mb-2">3</div>
+      
+    
+
+<h1 class="hhh1">hloo</h1> -->
+
+
+ 
+
+
+
+
+
+<!-- 
+<script>
+  alert('java')
+</script> -->
+
+<script>
+(function($) {
+  $( window ).scroll( function () {
+    if ( $(document).scrollTop() > 300 ) {
+      // Navigation Bar
+      $('.navbar').removeClass('fadeIn');
+      $('body').addClass('shrink');
+      $('.navbar').addClass('fixed-top animated fadeInDown');
+    } else {
+      $('.navbar').removeClass('fadeInDown');
+      $('.navbar').removeClass('fixed-top');
+      $('body').removeClass('shrink');
+      $('.navbar').addClass('animated fadeIn');
+    }
+  });  
+})(jQuery);
+
+  // var d="shabeeb"
+  // var a=10.5;
+  // var b=100;
+  // var c=a+b;
+  // console.log(typeof(c));
+  // document.write(c);
+
+  // var a=prompt('enter your name')
+  // console.log(a)
+  
+  // var a=prompt("enter a number")
+  // var b=prompt("enter a number")
+  // var c=Number(a)+Number(b); 
+  // document.write(c);
+  // var a=10;
+  // var b=2;
+  // var c=++a;
+  // document.write(c)
+
+  //  var b=2;
+  //  document.write(b==3)
+
+// var a=544
+// var b=787
+// var c=a*b
+// document.write(c)
+
+// var age=20
+// if(age>=18){
+// document.write("eligible to vote");
+// }
+
+// var a=9*4;
+// var b=8*4;
+// if(a>b)
+// {
+//   document.write(a,' is greater');
+// }
+// else{
+//   document.write(b," is greater");
+// }
+
+// var mark=50
+// if(mark>45){
+//   document.write("A+");
+// }
+// else if(mark>40){
+//   document.write("B+")
+// }
+// else if(mark>35){
+//   document.write("c+")
+// }
+// else{
+//   document.write("failed")
+// }
+
+// var a=prompt("enter a number");
+// if(a==1){
+//   document.write("sunday");
+// }
+// else if(a==2){
+//   document.write("monday");
+// }
+// else if(a==3){
+//   document.write("tuesday");
+// }
+// else if(a==4){
+//   document.write("wednesday");
+// }
+// else if(a==5){
+//   document.write("thursday");
+// }
+// else if(a==6){
+//   document.write("friday");
+// }
+// else if(a==7){
+//   document.write("saturday");
+// }
+// else{
+//   document.write("please enter between 1 to 7");
+// }
+
+// var a=4
+// switch(a){
+//   case 1 :
+//     document.write("sunday");
+//     break
+    
+//   case 2 :
+//     document.write("monday");
+//     break
+  
+//   case 3 :
+//     document.write("tuesday"); 
+    
+//   case 4 :
+//     document.write("wednesday");
+
+//   case 5 :
+//     document.write("thursday");
+
+//   case 6 :
+//     document.write("friday");
+
+//   case 7 :
+//     document.write("saturday")
+// }
+
+
+// var a=10
+// var b=20
+// var c=30
+// if(a>b){
+//   if(a>c){
+//     document.write(a,"is greater")
+
+//   }
+//   else{
+//     document.write(c,"is greater")
+
+//   }
+// }
+// else{
+//   if(c>b{
+//     document.write(b,"is greater")
+//   }
+//   else{
+//     document.write(c,"is greater")
+//   }
+
+// }
+
+
+
+//  for loop
+
+// for( var i=10; i>0; i--){
+//   document.write(i,"<br>")
+// }
+
+// for( var i=0; i<20; i++){                  
+
+  
+//   if(i%2==1) {
+//     document.write(i,"<br>")
+//   }
+//   else{
+//     document.write(0,"<br>")
+//   }
+// }
+
+
+      
+
+// var i=20
+// while(i>10){
+//   document.write(i,'<br>');                                // while loop
+//   i--;
+// }
+
+// do-while loop
+
+// var i=1;
+// do{
+//   document.write(i,"<br>")
+//   i++
+// }
+// while(i<10)
+
+
+
+// var num=prompt("enter a number");
+
+// var num=123
+// var rem=0;
+// var sum=0;
+// while(num>0){
+//   rem=num%10                           
+//   sum=sum+rem
+//   num=num/10
+// }
+// document.write(parseInt(sum))                    // parseInt
+
+
+// var num=123
+// var rem=0;
+// var sum=0;
+// while(num>0){                                     // reverse
+//   rem=num%10
+//   document.write(parseInt(rem))
+//   num=parseInt(num/10)
+// }
+
+
+// for(var i=0; i<5; i++){
+//   for(var j=0;j<5; j++){                         // nested for loop
+//     document.write(i,"",j)
+//     document.write('<br/>')
+//   }
+// }
+
+
+// var i=1
+// var j=1
+// while(i<=5){
+//   j=1
+//    while(j<=5){                                  // nested while loop
+//     document.write(i,"",j)
+//     j++
+//   }
+//   i++
+// }
+
+
+
+// for(i=0; i<7; i++){
+//    for(j=0; j<i; j++){
+//      document.write("*")                         //********
+
+//    }
+//    document.write("<br>")
+// }
+
+// for(i=0; i<5; i++){
+//   for(j=0; j<5){
+//     if
+//   }
+// }
+
+// var a=prompt("enter a number")
+// var i=0
+// while()
+   
+
+// var a=prompt("enter a number");
+// var i=1
+// var j=1
+// var c=0
+// while(i<=a){
+//   j=1
+//   document.write("multiplication table of ",i, "<br>")             // multiplication
+//   while(j<=10){
+//     c=i*j
+//     document.write(i,"*",j,"=",c,"<br>")
+//     j++
+//   }
+//   document.write("<br/>")
+//   i++
+// }
+
+
+// for(var i=1; i<=100; i++){
+      
+//   if(i==10){
+//         break
+//   }
+
+//   document.write(i,"<br>")
+// }
+
+
+// function login(num1,num2){
+ 
+//  var result=num1+num2
+// console.log(result)                                        //function
+
+// }
+// login(10,20)
+// login(13,45)
+
+
+// var a=prompt("enter a number");
+// switch(choice){
+//   case 1 :
+//     document.write("print right triangle");
+//     break
+    
+//   case 2 :
+//     document.write("print full pyramid");                       
+//     break
+  
+//   case 3 :
+//     document.write("upside down triangle"); 
+    
+//   case 4 :
+//     document.write("floyd triangle");
+
+  
+
+// var a=prompt("enter a number");
+// if(a==1){
+//   function data(a)
+// var i;
+// var j;
+// for (i = 1; i <= 10; i++ )
+// {
+// document.write("</br>");
+// for ( j = 0; j < 10-i; j++ )
+// {
+// document.write( "&nbsp" );
+// }
+// for ( j = 6-i; j <= 5; j++ )
+// {
+
+//   document.write("print right pyramid");
+// }
+// else if(a==2){
+//   document.write("print full pyramid");
+// }
+// else if(a==3){
+//   document.write("print upside down triangle");
+// }
+// else if(a==4){
+//   document.write("print floyd triangle");
+// }
+// else{
+//   document.write("please enter between 1 to 4");
+// }
+
+
+// function pyramid(num1)
+// var i;
+// var j;
+// for (i = 1; i <= 10; i++ )
+// {
+// document.write("</br>");
+// for ( j = 0; j < 10-i; j++ )
+// {
+// document.write( "&nbsp" );
+// }
+// for ( j = 6-i; j <= 5; j++ )
+// {
+
+// document.write( "*" );
+// }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1 id="h1">helloo</h1>
+    <h2 id="h2">welcome</h2>
+    <h1 id="sh">shabeeb</h1>
+    <h3 id="hi" hidden ">hidden</h3>
+    <p id="pp"></p>
+    <div id="div0" style="border:2px solid">cybersquare</div>
+    <h1 id="ba">baabtraaaaa</h1>
+
+    <br> <br> <br>
+    <input type="text" name="" id="n1">
+    <button id="b1">click</button>
+    <script>
+        $(document).ready(function(){
+            // alert("alert");
+            console.log("worked")
+            $("#h1").css("color","red")
+            $("#h2").css("color","blue")
+            $("#sh").css("color","green")
+
+    });
+        
+    $("#b1").click(function(){
+        // alert("clicked")
+        $("#h1").hide()
+        $("#hi").show()
+        $("#pp").html("baabtra <b>good morning</b>")
+
+        value =$("#n1").val()
+        console.log(value)
+        $("#div0").width("250px").height("50px")
+        $("#ba").toggle()
+
+    });
+
+
+
+
+
+        
+        </script>
+
+
+
+
+
+
+</body>
+</html>

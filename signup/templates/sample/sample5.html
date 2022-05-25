@@ -1,0 +1,243 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- <input type="text" name="" id="no1" placeholder="enter first number">
+<input type="text" name="" id="no2" placeholder="enter second number">
+<input type="text" name="" id="no3" placeholder="answer">
+
+<button onclick="add()">add</button>
+<script>
+    function add(){
+        a=Number (document.getElementById("no1").value)
+        b=Number (document.getElementById("no2").value)
+        sum=a-b
+        document.getElementById("no3").innerHTML=sum
+    }
+</script> -->
+
+
+<!-- <input type="text" name="" id="nu1" placeholder="first number">
+<input type="text" name="" id="nu2" placeholder="result">
+
+<button onclick="reverse()">submit</button>
+<script>
+    function reverse(){
+        a=Number (document.getElementById("nu1").value)
+        rev=0
+        while(a>0){
+            rem=a%10
+            rev=rev*10+rem
+            a=parseInt(a/10)
+        }
+        document.getElementById("nu2").value=rev
+    }
+</script> -->
+
+
+<!-- <input type="text" name="" id="num1" placeholder="first number">
+<input type="text" name="" id="num2" placeholder="result">
+<button onclick="fact()">submit</button>
+<script>
+    function fact(){
+        a=Number(document.getElementById("num1").value)
+        fact=1
+        for(i=a; i>=1; i--){
+            fact=fact*i
+        }
+        Number(document.getElementById("num2").value=fact)
+
+    }
+</script> -->
+
+
+<!-- 
+<input type="text" name="" id="numb1" placeholder="first number"> +
+<input type="text" name="" id="numb2" placeholder="second number">
+<p id="ans"></p> =
+
+<button onclick="add()">answer</button>
+<script>
+    function add(){
+        a=Number (document.getElementById("numb1").value)
+        b=Number (document.getElementById("numb2").value)
+        sub=a/b
+        document.getElementById("ans").innerHTML=sub
+    } 
+</script>   -->
+
+<script> 
+
+// let a=10
+// var a=20                           let
+// console.log(a)
+
+
+
+// const a=10
+// a=20                               const
+// console.log(a)
+
+
+// var a=1000
+// function get(){
+//     let a=2000
+//     console.log(a,"inside function")
+// }
+//  get()
+//  console.log(a,"outside function")
+
+
+
+// function get(num1,num2){
+//     let c= num1+num2
+//     console.log(c,)
+// }
+// get(10,20)
+
+// function sum(num1,num2){
+//     let a=num1
+//     let b=num2
+//     let c=num1+num2
+
+//     return c
+// }
+//     var rem=get(30,50)
+//     var data=get(30,200)
+//     console.log(rem)
+//     console.log(data)
+
+
+// function get(num1,num2){
+//     return num1+num2
+// }
+// var rem=get(30,50)
+// var data= get(50,200)
+// console.log(rem)
+// console.log(data)
+
+// var a=[1,22,3,42,5,6,7,8,]
+// var d=["welcome"]
+// var c=["a"]
+// large=0
+// larger=0
+
+// f=d.replace("e","E")
+// document.write(f)
+
+// var a="welcome"
+// var b="hello"
+// var c=b+a
+
+// document.write(c)
+
+
+
+// let text
+
+
+
+
+</script>
+
+
+<div class="container">
+    <form class="form" id="form"  action="" method=""  >
+        <!-- <h2>Register With Us</h2> -->
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Username">
+            <span id="fname"></span>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email">
+            <span id="email_error"></span>
+        </div>
+        <div class="form-control">
+             <label for="phone number">phone number</label>
+             <input type="text" id="number" placeholder="enter phone number">
+        </div>
+        <div class="form-control">
+            <label for="gender">male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="gender">female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Enter password again">
+            <small>Error Message</small>
+        </div>
+        <button onclick="return validate()">Submit</button>
+    </form>
+</div>
+
+ 
+
+
+<script>
+
+
+
+
+
+
+
+
+
+//  function validate(){
+//    var txt_fname=document.getElementById("username")
+//    var txt_email=document.getElementById("email")
+//    var txt_male=document.getElementById("male")
+//    var txt_female=document.getElementById("female")
+//    var txt_password=document.getElementById("password")
+//    var txt_confirm=document.getElementById("confirm")
+//    var email_pattern = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+
+//  if(txt_fname.value==""){
+//     //   alert("please fill the first name")
+//      document.getElementById("f_error").innerHTML="please enter your username"
+//      document.getElementById("f_error").style.color="red"
+//      return false;
+//  }else{
+//      document.getElementById("f_error").innerHTML=""
+//  }
+//  if(txt_email.value==""){
+//      document.getElementById("email_error").innerHTML="*please enter your email id"
+//      document.getElementById("email_error").style.color="red"
+//      return false;
+//     }else{
+//      document.getElementById("f_error").innerHTML=""
+//  }
+
+//  }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>

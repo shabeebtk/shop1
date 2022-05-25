@@ -1,0 +1,44 @@
+.hh11{
+    color: blue;
+    font-weight: bold;
+}
+
+.navbar1{
+    height: 2cm;
+}
+
+.logo{
+    height: 77px;
+    width: 3.5cm;
+}
+
+.elements{
+    /* padding-top: 30px; */
+    font-weight: bold;
+    
+}
+.banner1,.banner2,.banner3{
+    width: 10cm;
+    padding-left: 30px;
+    margin: 10px;
+}
+.btn1,.btn2,.btn3{
+    margin-left: 155px;
+   
+}
+
+.fruitdiv{
+    position: relative;
+    left: 60px;
+    column-gap: 20px;
+}
+
+.see_all_btn{
+    width: 100%;
+    padding: 10px 27px;
+    
+}
+
+.li{
+    list-style: none;
+}

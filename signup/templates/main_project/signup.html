@@ -1,0 +1,57 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+
+    </style>
+
+</head>
+
+<body class="bd">
+   
+    <center>
+        <h1 class="heading">F R E S H  &nbsp; M A R T <h3 class="bh">SUPER MARKET</h3> 
+
+        <BR></BR><BR></BR><BR>
+        <div class="div1">
+            <h3><u> sign up</h3></u>
+
+            <form action="" class="mb-3">
+
+                <label for="name">name </label> 
+                
+                <input type="name" placeholder="enter your name ">
+                <label for="phone number">phone number </label> &nbsp; &nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="enter your number" maxlength="10">
+                
+                <label for="password">new password</label> &nbsp; &nbsp;&nbsp;&nbsp;
+                <input type="password" placeholder="enter your password">
+                
+                <label for="password">confirm password</label>
+                <input type="password" placeholder="confirm password">
+                
+                <input type="submit"> &nbsp; <input type="reset">
+                
+                <p style="color: black;">already have an account?  <a href="{% url 'signin' %}" class="link">signin</a> </p>
+                
+                 
+
+        </div>
+
+        </form>
+    </center>
+    <br>
+
+
+
+
+</body>
+
+</html>
