@@ -594,3 +594,10 @@ body {
     background: linear-gradient(35deg,$bg-light-blue 10%,$bg-dark-blue 90%);
   }
 }
+
+
+.image101{
+    color: #2ecc71;
+    background-image: url('./images/fish.jpg');
+    repeat 0 0;
+}

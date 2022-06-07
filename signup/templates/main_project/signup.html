@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <style>
 
@@ -16,38 +16,78 @@
 
 <body class="bd">
    
-    <center>
-        <h1 class="heading">F R E S H  &nbsp; M A R T <h3 class="bh">SUPER MARKET</h3> 
-
-        <BR></BR><BR></BR><BR>
-        <div class="div1">
-            <h3><u> sign up</h3></u>
-
-            <form action="" class="mb-3">
-
-                <label for="name">name </label> 
-                
-                <input type="name" placeholder="enter your name ">
-                <label for="phone number">phone number </label> &nbsp; &nbsp;&nbsp;&nbsp;
-                <input type="number" placeholder="enter your number" maxlength="10">
-                
-                <label for="password">new password</label> &nbsp; &nbsp;&nbsp;&nbsp;
-                <input type="password" placeholder="enter your password">
-                
-                <label for="password">confirm password</label>
-                <input type="password" placeholder="confirm password">
-                
-                <input type="submit"> &nbsp; <input type="reset">
-                
-                <p style="color: black;">already have an account?  <a href="{% url 'signin' %}" class="link">signin</a> </p>
-                
-                 
-
+    <div class="navbar1 container-fluid bg-warning row"> 
+        <div class="col-lg-2 col-2">
+          <img class="logo" src="./static/images/mainlogo1.png" alt="">
         </div>
+        <div class="elements col-lg-6 col-6 p-4">
+          <a class="text-black text-decoration-none" href="home">HOME</a> &nbsp; &nbsp;
+          <a class="text-black text-decoration-none" href="">CATOGORIES</a> &nbsp; &nbsp;
+          <a class="text-black text-decoration-none" href="">CONTACT US</a> 
+        </div>
+         <div class="col-lg-3 col-4">
+         <form class="p-3 d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form></div>
+        <!-- <div class="col-lg-1">
+          <a href=""><img src=".static/images/mainproject/add to cart.png" alt=""></a>
+      </div> -->
+    
+      </div>
 
-        </form>
-    </center>
-    <br>
+      <div class="background_image1 bg-image" style="background-image:url('./static/images/mainproject/sp_home.jpg') ; height: 100vh; width: auto;">
+     <center>
+         <div class="signup_form_div bg-light">
+            <form class="signup_form">
+                 <!-- phone number input -->
+                 <div class="form-outline mb-4">
+                    <input type="number" id="form1Example1" class="form-control" placeholder="Name" />
+                    <label class="form-label" for="form1Example1"></label>
+                  </div>
+
+
+                <!-- phone number input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form1Example1" class="form-control" placeholder="Phone Number" />
+                  <label class="form-label" for="form1Example1"></label>
+                </div>
+              
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form1Example2" class="form-control" placeholder="password" />
+                  <label class="form-label" for="form1Example2"></label>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="password" id="form1Example2" class="form-control" placeholder="confirm password" />
+                    <label class="form-label" for="form1Example2"></label>
+                  </div>
+              
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <!-- <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                      <label class="form-check-label" for="form1Example3"> Remember me </label>
+                    </div> -->
+                  </div>
+              
+                  <!-- <div class="col"> -->
+                    <!-- Simple link -->
+                    <!-- <a href="#!">Forgot password?</a>
+                  </div>
+                </div> -->
+              
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+              </form>
+             <p>already have an account? <a href="signin">signin</a></p> 
+         </div>
+     </center>
+    
+    </div>
 
 
 

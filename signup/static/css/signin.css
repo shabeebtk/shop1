@@ -1,3 +1,5 @@
+/* home page */
+
 .hh11{
     color: blue;
     font-weight: bold;
@@ -11,6 +13,12 @@
     height: 77px;
     width: 3.5cm;
 }
+
+.join_us{
+    position: relative;
+    left: 15px;
+}
+
 
 .elements{
     /* padding-top: 30px; */
@@ -41,4 +49,63 @@
 
 .li{
     list-style: none;
+}
+
+.footer_home{
+    height: 250px;
+    width: 100%;
+}
+
+.footer_logo{
+    height: 250px;
+    
+}
+
+
+
+
+/* signin page */
+
+.signin_form{
+    position: relative;
+    bottom: 100px;
+    width: 300px;
+    
+}
+
+.signin_form_div{
+    padding-top: 150px;
+}
+
+.signin_form_div{
+    background-image: url(../images/);
+    height: 320px;
+    width: 355px;
+    position: relative;
+    top: 120px;
+    border-radius: 10px;
+    
+}
+
+/* signup page */
+
+
+.signup_form_div{
+    padding-top: 150px;
+}
+
+.signup_form_div{
+    background-image: url(../images/);
+    height: 380px;
+    width: 355px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+}
+
+.signup_form{
+    position: relative;
+    bottom: 125px;
+    width: 300px;
+    
 }

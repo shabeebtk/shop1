@@ -39,4 +39,7 @@ def java(request):
     return render(request,'sample/javascript.html')  
 
 def java2(request):
-    return render(request,'sample/javascript2.html')                    
+    return render(request,'sample/javascript2.html')     
+
+def java3(request):
+    return render(request, 'sample/javascript3.html')                   
